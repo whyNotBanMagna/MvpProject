@@ -1,8 +1,10 @@
 package com.hengyi.mvp;
 
+
 import com.hengyi.mvp.component.ApplicationComponent;
 import com.hengyi.mvp.component.DaggerApplicationComponent;
 import com.hengyi.mvp.module.ApplicationModule;
+import com.hengyi.mvp.module.HttpModule;
 
 import org.litepal.LitePal;
 import org.litepal.LitePalApplication;
@@ -23,6 +25,7 @@ public class MyApp extends LitePalApplication {
         LitePal.initialize(this);
         mApplicationComponent = DaggerApplicationComponent.builder()
                 .applicationModule(new ApplicationModule(this))
+                .httpModule(new HttpModule())
                 .build();
     }
 

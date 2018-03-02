@@ -1,10 +1,5 @@
 package com.hengyi.mvp.ui.base;
 
-/**
- * desc:
- * author: Will .
- * date: 2017/9/2 .
- */
 
 public class BasePresenter<T extends BaseContract.BaseView> implements BaseContract.BasePresenter<T> {
 

@@ -2,11 +2,7 @@ package com.hengyi.mvp.ui.base;
 
 import com.trello.rxlifecycle2.LifecycleTransformer;
 
-/**
- * desc:
- * author: Will .
- * date: 2017/9/2 .
- */
+
 public interface BaseContract {
 
     interface BasePresenter<T extends BaseContract.BaseView> {

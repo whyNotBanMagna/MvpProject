@@ -7,11 +7,7 @@ import com.hengyi.mvp.MyApp;
 import dagger.Module;
 import dagger.Provides;
 
-/**
- * desc:
- * author: Will .
- * date: 2017/9/2 .
- */
+
 @Module
 public class ApplicationModule {
 
